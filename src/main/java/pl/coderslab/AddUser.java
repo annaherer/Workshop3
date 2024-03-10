@@ -18,7 +18,7 @@ public class AddUser extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String userName = request.getParameter("name").trim();
         String userEmail = request.getParameter("email").trim();
-        String userPassword = request.getParameter("password").trim();
+        String userPassword = request.getParameter("password");
 
         String error = "";
 
