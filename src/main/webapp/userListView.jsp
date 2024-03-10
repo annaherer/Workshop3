@@ -39,7 +39,7 @@
                         <td>${user.userName}</td>
                         <td>${user.email}</td>
                         <td>
-                            <a href="/user/delete?id=${user.id}">Delete</a>
+                            <a href="javascript:deleteUserMethod(${user.id})">Delete</a>
                             <a href="/user/edit?id=${user.id}">Edit</a>
                             <a href="/user/display?id=${user.id}">Display</a>
                         </td>
@@ -49,6 +49,16 @@
         </div>
     </div>
 </div>
+
+<form id="deleteUserForm" action="/user/delete" method="post">
+    <input type="hidden" name="userId" id="userId">
+</form>
+<script>
+    function deleteUserMethod(userId) {
+        $("#userId").val(userId);
+        document.getElementById("deleteUserForm").submit();
+    }
+</script>
 
 <!-- /.container-fluid -->
 
