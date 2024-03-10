@@ -45,7 +45,7 @@ public class UserDAO {
             statement.setString(3, user.getPassword());
             statement.executeUpdate();
 
-            // Read id and set obiect user.
+            // Read id and set object user.
             ResultSet resultSet = statement.getGeneratedKeys();
             if (resultSet.next()) {
                 user.setId(resultSet.getInt(1));
@@ -68,8 +68,8 @@ public class UserDAO {
             if (resultSet.next()) {
                 user = new User(
                         userId,
-                        resultSet.getString("email"),
                         resultSet.getString("username"),
+                        resultSet.getString("email"),
                         resultSet.getString("password"));
             }
 
@@ -141,8 +141,8 @@ public class UserDAO {
             while (resultSet.next()) {
                 User user = new User(
                         resultSet.getInt("id"),
-                        resultSet.getString("email"),
                         resultSet.getString("username"),
+                        resultSet.getString("email"),
                         resultSet.getString("password"));
 
                 users = addToArray(user, users);
