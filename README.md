@@ -8,8 +8,10 @@
 * [Development status](#development-status)
 * [Contact](#contact)
 
+
 ## DAO App
 🔹 A web app using DAO 💻 layer to manage users.\
+
 
 ## Technologies
 
@@ -27,8 +29,10 @@
 🔹 CSS,\
 🔹 Bootstrap Framework v. 5.3.3,
 
+
 ## Architecture Design Pattern
 🔹 Model - View - Controller (MVC),
+
 
 ## Features
 🔹 Contains methods for accessing the underlying database data:
@@ -37,15 +41,18 @@
 - Update ✅,
 - Delete ✅.
 
+
 ## Setup
 🔹 Clone repository from GitHub.\
 🔹 Prepare database server and create _workshop3_ schema.\
 🔹 Compile sources with Maven.\
 🔹 Execute application _jar_ file.
 
+
 ## Development Status
 🔹 **The DAO** application was completed.\
 🔹 No further developments **_planned_**.
+
 
 ## Contact
 **Feel free to connect & contact me!**
